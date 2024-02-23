@@ -42,4 +42,7 @@ public class AppTest
 
     @Test
     public void addmeTest(){assertEquals(app.addme(12,3), 15);}
+
+   @Test
+    public void subtractmeTets() {assertEquals(app.subtractme(14,2), 12);}
 }
