@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-org_example_AppTest" title="org.example.AppTest" class="method navigator-link" hash-for-method="addmeTest">addmeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-org_example_AppTest" title="org.example.AppTest" class="method navigator-link" hash-for-method="subtractmeTets">subtractmeTets</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-org_example_AppTest -->
@@ -128,6 +133,13 @@
                   <a name="addmeTest">
                   </a> <!-- addmeTest -->
                   <span class="method-name">addmeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="subtractmeTets">
+                  </a> <!-- subtractmeTets -->
+                  <span class="method-name">subtractmeTets</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,16 +195,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addmeTest')
 data.setCell(0, 2, 'org.example.AppTest')
-data.setCell(0, 3, 11);
+data.setCell(0, 3, 13);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'subtractmeTets')
+data.setCell(1, 2, 'org.example.AppTest')
+data.setCell(1, 3, 0);
 window.suiteTableData['org_example_AppTest']= { tableData: data, tableDiv: 'times-div-org_example_AppTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 ms</span>
+              <span class="suite-total-time">Total running time: 13 ms</span>
               <div id="times-div-org_example_AppTest">
               </div> <!-- times-div-org_example_AppTest -->
             </div> <!-- times-div -->
@@ -222,6 +238,10 @@ return data;
               <div class="test-method">
                 <span class="method-name">addmeTest</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">subtractmeTets</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
